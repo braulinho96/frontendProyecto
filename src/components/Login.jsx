@@ -60,7 +60,10 @@ const Login = ({ onLogin }) => {
         <button type="submit">Sign in</button>
       </form>
       <p>
-        Don't have an account? <a href="/register">Register here</a>
+        Don't have an account? 
+        <button onClick={() => navigate('/register')} style={{ marginLeft: '5px' }}>
+          Register here
+        </button>
       </p>
     </div>
   );
