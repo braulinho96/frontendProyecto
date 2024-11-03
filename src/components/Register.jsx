@@ -36,6 +36,7 @@ const Register = () => {
       name,
       password,
       solicitude_state: true,
+      id_rol: 2,
     };
 
     try {
