@@ -554,7 +554,7 @@ const R6 = ({age, setAgeValue, onEvaluateR6}) => (
         <input
           type="number"
           value={age}
-          min={0}
+          min={18}
           onChange={(e) => setAgeValue(Number(e.target.value))}
         />
       </label>
