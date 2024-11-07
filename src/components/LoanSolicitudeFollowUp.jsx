@@ -100,7 +100,7 @@ const LoanSolicitudeFollowUp = ({ user }) => {
                 </td>
                 <td>
                   {loan.solicitudeState === 'E4' && (
-                    <button onClick={() => handleEvaluate(loan)}>Ver Costos</button>
+                    <button onClick={() => handleEvaluate(loan)}>View Cost</button>
                   )}
                 </td>
               </tr>
