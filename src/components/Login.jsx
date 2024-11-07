@@ -34,7 +34,7 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="login-page">
-      <h1>Login</h1>
+      <h1> Welcome!, Login</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="rut">RUT:</label>
