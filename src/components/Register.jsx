@@ -40,24 +40,24 @@ const Register = () => {
     };
 
     try {
-      await userService.create(user);
-      setSuccess('User registered successfully.');
-      setTimeout(() => navigate('/'), 200);
-    } catch (err) {
-      setError('The RUT is already registered.');
-      console.error('Error:', err);
+        await userService.create(user);
+        setSuccess('User registered successfully.');
+        setTimeout(() => navigate('/'), 200);
+    }catch (err) {
+        setError('The RUT is already registered.');
+        console.error('Error:', err);
     }
   };
 
   return (
     <div>
-      <h2>User Registration</h2>
+      <h2>User Registration, please enter your information:</h2>
       <form onSubmit={handleRegister}>
         <input
           type="text"
           placeholder="RUT - e.g., 12345678-9"
           value={rut}
-          onChange={handleRutChange} // This is 
+          onChange={handleRutChange} 
           maxLength={10}
           required
         />
